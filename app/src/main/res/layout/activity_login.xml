@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/sourse"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/layout"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="50dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:text="账户：" />
+
+
+            <LinearLayout
+                android:background="@drawable/myedit_style"
+                android:layout_width="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/u_zhanghao"
+                    android:layout_width="220dp"
+                    android:layout_height="40dp"
+                    android:background="@null"
+                    android:drawableLeft="@drawable/user_name"
+                    android:drawablePadding="6dp"
+                    android:hint="name_tip"
+
+                    android:singleLine="true">
+
+                    <requestFocus />
+                </EditText>
+
+                <ImageView
+                    android:id="@+id/xf_account"
+                    android:layout_margin="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/mc" />
+            </LinearLayout>
+
+
+        <ImageButton
+            android:id="@+id/u_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/lg_down"
+            android:paddingRight="2dip"
+            android:scaleType="fitXY" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:text="密码：" />
+
+        <LinearLayout
+            android:background="@drawable/myedit_style"
+            android:layout_width="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/u_mima"
+                android:layout_width="220dp"
+                android:background="@null"
+                android:layout_height="40dp"
+                android:layout_marginLeft="5dp"
+                android:hint="密码" />
+
+            <ImageView
+                android:id="@+id/xf_password"
+                android:layout_margin="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/mc" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/bt_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="80dp"
+            android:background="@drawable/mybutton_style"
+            android:text="登录" />
+
+        <Button
+            android:id="@+id/bt_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/mybutton_style"
+            android:text="注册" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/bt_shibie"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="80dp"
+            android:background="@drawable/mybutton_style"
+            android:text="人脸登录" />
+
+        <Button
+            android:id="@+id/bt_luru"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/mybutton_style"
+            android:text="人脸录入" />
+    </LinearLayout>
+
+
+</LinearLayout>
